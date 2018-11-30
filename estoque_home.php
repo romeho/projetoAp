@@ -45,7 +45,7 @@ include_once 'includes/mensagem.php';
               </div>
               <div class="modal-footer">
 
-                <form action="php_action/cliente_delete.php" method="POST">
+                <form action="php_action/estoque_delete.php" method="POST">
                   <input type="hidden" name="id" value="<?php echo $dados['id']; ?>">
                   <button type="submit" name="btn-deletar" class="btn red">Sim, desejo deletar</button>
 

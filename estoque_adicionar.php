@@ -22,7 +22,6 @@
           <label for="qntd_atual">Quantidade atual</label>
         </div>
 
-
         <button type="submit" name="btn-cadastrar" class="btn blue">Cadastrar</button>
         <a href="estoque_home.php" type="submit" class="btn green">Lista do estoque</a>
 
