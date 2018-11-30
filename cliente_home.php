@@ -22,11 +22,14 @@ include_once 'includes/mensagem.php';
 
         <tbody>
           <?php
+          //select em todos os campos da tabela cliente
             $sql = "SELECT * FROM cliente";
+          //variavel resultado pra receber os dados da tabela
             $resultado = mysqli_query($connect, $sql);
 
             if(mysqli_num_rows($resultado) > 0):
-
+              // enquanto a variavel dados for igual ao array $resultado
+              // vai mostrar os dados
             while($dados = mysqli_fetch_array($resultado)):
            ?>
           <tr>

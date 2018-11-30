@@ -4,7 +4,8 @@ session_start();
 //Conexao
 require_once 'db_connect.php';
 
-if(isset($_POST['btn-cadastrar'])):
+//verificar se existe o btn-cadastrar no post
+if(isset($_POST['btn-cadastrar'])){
   $nome = mysqli_escape_string($connect, $_POST['nome']);
   $contato = mysqli_escape_string($connect, $_POST['contato']);
   $cidade = mysqli_escape_string($connect, $_POST['cidade']);
@@ -13,13 +14,13 @@ if(isset($_POST['btn-cadastrar'])):
   //Inseriondo os dados no banco de dados
   $sql = "INSERT INTO cliente (nome, contato, cidade, ultima_compra) VALUES('$nome', '$contato', '$cidade', '$ultima_compra')";
 
-  //verificando a query
-  if(mysqli_query($connect, $sql)):
+  //verificando se conseguiu inserir os dados
+  if(mysqli_query($connect, $sql)){
     $_SESSION['mensagem'] = "Cadastrado com sucesso!";
     header('Location: ../cliente_home.php');
-  else:
+  }else{
     $_SESSION['mensagem'] = "Erro ao cadastrar cliente!";
     header('Location: ../cliente_home.php');
-  endif;
-endif;
+  }
+}
  ?>
