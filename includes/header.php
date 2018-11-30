@@ -16,11 +16,11 @@
     <nav class="blue-grey darken-2 lighten-1" role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Wilson Variedades</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="home.php">Página Inicial</a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="home.php">Página Inicial</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
