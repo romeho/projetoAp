@@ -23,7 +23,7 @@
         <input type="hidden" name="id" value="<?php echo $dados['id']; ?>">
         <div class="input-field col s12">
           <input type="text" name="nome_produto" id="nome_produto" value="<?php echo $dados['nome_produto']; ?>">
-          <label for="nome">Nome do produto</label>
+          <label for="nome_produto">Nome do produto</label>
         </div>
 
         <div class="input-field col s12">
@@ -37,7 +37,7 @@
         </div>
 
         <button type="submit" name="btn-editar" class="btn blue">Atualizar</button>
-        <a href="estoque_home.php" type="submit" class="btn green">Lista do estoque</a>
+        <a href="estoque_home.php" type="submit" class="btn green">Lista de estoque</a>
 
       </form>
 

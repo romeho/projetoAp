@@ -13,10 +13,9 @@ include_once 'includes/mensagem.php';
       <table class="striped">
         <thead>
           <tr>
-            <th>Nome produto:</th>
+            <th>Nome do produto:</th>
             <th>Quantidade inicial:</th>
             <th>Quantidade atual:</th>
-            <th>Quantidade vendida:</th>
           </tr>
         </thead>
 
@@ -60,13 +59,12 @@ include_once 'includes/mensagem.php';
             <td>-</td>
             <td>-</td>
             <td>-</td>
-            <td>-</td>
           </tr>
         <?php endif; ?>
         </tbody>
       </table>
       <br>
-      <a href="estoque_adicionar.php" class="btn blue">Adicionar novo produto</a>
+      <a href="estoque_adicionar.php" class="btn blue">Adicionar novo estoque</a>
     </div>
   </div>
 

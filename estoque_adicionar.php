@@ -23,7 +23,7 @@
         </div>
 
         <button type="submit" name="btn-cadastrar" class="btn blue">Cadastrar</button>
-        <a href="estoque_home.php" type="submit" class="btn green">Lista do estoque</a>
+        <a href="estoque_home.php" type="submit" class="btn green">Lista de estoque</a>
 
       </form>
 
