@@ -7,12 +7,12 @@ require_once 'db_connect.php';
 if(isset($_POST['btn-editar'])):
   $nome_produto = mysqli_escape_string($connect, $_POST['nome_produto']);
   $qntd_inicial = mysqli_escape_string($connect, $_POST['qntd_inicial']);
-  $qntd_final = mysqli_escape_string($connect, $_POST['qntd_final']);
+  $qntd_atual = mysqli_escape_string($connect, $_POST['qntd_atual']);
 
   $id = mysqli_escape_string($connect, $_POST['id']);
 
   //Inseriondo os dados no banco de dados
-  $sql = "UPDATE estoque SET nome_produto = '$nome_produto', qntd_inicial = '$qntd_inicial', qntd_final = '$qntd_final' WHERE id = '$id' ";
+  $sql = "UPDATE estoque SET nome_produto = '$nome_produto', qntd_inicial = '$qntd_inicial', qntd_atual = '$qntd_atual' WHERE id = '$id' ";
 
   //verificando a query
   if(mysqli_query($connect, $sql)):

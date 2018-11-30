@@ -16,7 +16,7 @@ if(isset($_POST['btn-deletar'])):
     $_SESSION['mensagem'] = "Deletado com sucesso!";
     header('Location: ../estoque_home.php');
   else:
-    $_SESSION['mensagem'] = "Erro ao deletar cliente!";
+    $_SESSION['mensagem'] = "Erro ao deletar!";
     header('Location: ../estoque_home.php');
   endif;
 endif;

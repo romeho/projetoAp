@@ -17,7 +17,7 @@ if(isset($_POST['btn-cadastrar'])):
     $_SESSION['mensagem'] = "Cadastrado com sucesso!";
     header('Location: ../estoque_home.php');
   else:
-    $_SESSION['mensagem'] = "Erro ao cadastrar cliente!";
+    $_SESSION['mensagem'] = "Erro ao cadastrar!";
     header('Location: ../estoque_home.php');
   endif;
 endif;
